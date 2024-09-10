@@ -1,0 +1,43 @@
+Question 1:
+    Given a singly linked list, find the middle of the linked list. For example, if the given linked list is 1->2->3-
+    >4->5 then the output should be 3. If there are even nodes, then there would be two middle nodes, we 
+    need to print the second middle element. For example, if given linked list is 1->2->3->4->5->6 then the 
+    output should be 4.
+
+    Pseudocode (Brute Force Method): 
+    Initialize "count" variable
+    FOR item in linked_list:
+        count += 1
+    new_count = integer value of count/2
+    print value of the linked_list at new_count variable
+
+
+Question 2:
+    Write a pseudo code for a function that clones a linked list. By taking a singly linked list and returning a 
+    complete copy of that list.
+
+    Pseudocode:
+    Initialize current variable = head
+    Initialize new_list variable = None
+    Initialize follow variable = None
+    WHILE current is not None:
+        IF new_list is empty:
+            set new_list = Node(current.data)
+            set follow = new_list
+        ELSE:
+            set follow.next = Node(current.data)
+            set follow = follow.next 
+        set current = currunt.next
+    RETURN new_list 
+
+
+
+
+        
+
+
+
+
+    
+
+
